@@ -92,7 +92,7 @@ chmod +x "${INSTALL_DIR}/mcp-caller"
 
 echo ""
 echo "==========================================================="
-echo "  ? Successfully installed mcp-caller to ${INSTALL_DIR}/mcp-caller"
+echo "  ✓ Successfully installed mcp-caller to ${INSTALL_DIR}/mcp-caller"
 echo "==========================================================="
 echo ""
 

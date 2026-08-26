@@ -63,7 +63,7 @@ Remove-Item -Recurse -Force  -ErrorAction SilentlyContinue
 
 Write-Host ""
 Write-Host "===========================================================" -ForegroundColor Cyan
-Write-Host "  ? Successfully installed mcp-caller to: \mcp-caller.exe" -ForegroundColor Green
+Write-Host "  ✓ Successfully installed mcp-caller to: \mcp-caller.exe" -ForegroundColor Green
 Write-Host "===========================================================" -ForegroundColor Cyan
 Write-Host ""
 

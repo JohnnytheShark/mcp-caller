@@ -1,19 +1,19 @@
 /**
- * hero.js â€” Hero Section Component with Multi-Platform Install Switcher
+ * hero.js — Hero Section Component with Multi-Platform Install Switcher
  */
 
 export function renderHero(containerId = 'hero-container') {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  container.innerHTML = `
+  container.innerHTML = 
     <section class="hero-section" aria-label="Introduction">
       <div class="container">
         <div class="hero-layout">
           <div class="hero-text">
             <div class="hero-pill">
               <span class="pill-dot"></span>
-              <span>v0.2.0 â€¢ Rust AI Skill Engine</span>
+              <span>v0.1.0 • curl for MCP</span>
             </div>
 
             <h1 class="hero-title">
@@ -34,7 +34,7 @@ export function renderHero(containerId = 'hero-container') {
               <div class="install-command-wrap">
                 <div class="command-content">
                   <span class="prompt-sym">$</span>
-                  <span id="hero-cmd-text">cargo install mcp-caller</span>
+                  <span id="hero-cmd-text">curl -fsSL https://raw.githubusercontent.com/JohnnytheShark/mcp-caller/main/install.sh | bash</span>
                 </div>
                 <button class="copy-btn" id="hero-copy-cmd-btn" title="Copy command to clipboard" aria-label="Copy installation command">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -90,7 +90,7 @@ export function renderHero(containerId = 'hero-container') {
         </div>
       </div>
     </section>
-  `;
+  \;
 
   // Attach command tab switching
   const commands = {
