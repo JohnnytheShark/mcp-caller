@@ -1,0 +1,26 @@
+# Rust build artifacts
+/target
+Cargo.lock
+**/*.rs.bk
+
+# Local MCP configs & secrets
+mcp.json
+.mcp.json
+.mcprc.json
+.env
+*.local.json
+
+# Logs & temporary files
+*.log
+scratch/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
