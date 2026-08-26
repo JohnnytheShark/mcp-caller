@@ -1,4 +1,4 @@
-﻿# âš¡ MCP-Caller
+# âš¡ MCP-Caller
 
 [![Crates.io](https://img.shields.io/crates/v/mcp-caller.svg)](https://crates.io/crates/mcp-caller)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)

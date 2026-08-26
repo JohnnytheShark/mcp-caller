@@ -1,4 +1,4 @@
-﻿/**
+/**
  * hero.js â€” Hero Section Component with Multi-Platform Install Switcher
  */
 

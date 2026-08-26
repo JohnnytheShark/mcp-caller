@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env bash
+#!/usr/bin/env bash
 # ==============================================================================
 # mcp-caller Installer for Linux and macOS
 # Usage: curl -fsSL https://raw.githubusercontent.com/JohnnytheShark/mcp-caller/main/install.sh | bash
