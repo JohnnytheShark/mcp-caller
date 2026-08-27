@@ -31,7 +31,7 @@ try {
     Write-Warning "Could not fetch release tag from GitHub API, fallback to $Version"
 }
 
-$Asset = "mcp-caller-${Target}"
+$Asset = "mcp-caller-${Version}-${Target}"
 $DownloadUrl = "https://github.com/$Repo/releases/download/$Version/${Asset}.zip"
 $InstallDir = Join-Path $env:USERPROFILE ".mcp-caller\bin"
 $ZipFile = Join-Path $env:TEMP "${Asset}.zip"
@@ -63,7 +63,7 @@ Remove-Item -Recurse -Force $ExtractDir -ErrorAction SilentlyContinue
 
 Write-Host ""
 Write-Host "===========================================================" -ForegroundColor Cyan
-Write-Host "  ✓ Successfully installed mcp-caller to: $InstallDir\mcp-caller.exe" -ForegroundColor Green
+Write-Host "  [+] Successfully installed mcp-caller to: $InstallDir\mcp-caller.exe" -ForegroundColor Green
 Write-Host "===========================================================" -ForegroundColor Cyan
 Write-Host ""
 
