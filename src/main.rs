@@ -117,7 +117,7 @@ async fn main() {
     };
 
     if let Err(err) = result {
-        eprintln!("\n{} {}", "Error:".red().bold(), err);
+        eprintln!("\n{} {:#}", "Error:".red().bold(), err);
         std::process::exit(1);
     }
 }
