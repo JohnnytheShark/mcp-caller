@@ -6,7 +6,7 @@ export function renderHero(containerId = 'hero-container') {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  container.innerHTML = 
+  container.innerHTML = `
     <section class="hero-section" aria-label="Introduction">
       <div class="container">
         <div class="hero-layout">
@@ -90,7 +90,7 @@ export function renderHero(containerId = 'hero-container') {
         </div>
       </div>
     </section>
-  \;
+  `;
 
   // Attach command tab switching
   const commands = {

@@ -6,7 +6,7 @@ export function renderFeatures(containerId = 'features-container') {
   const container = document.getElementById(containerId);
   if (!container) return;
 
-  container.innerHTML = \
+  container.innerHTML = `
     <section class="section" id="features" aria-label="Architecture & Capabilities">
       <div class="container">
         <div class="section-header">
@@ -102,5 +102,5 @@ export function renderFeatures(containerId = 'features-container') {
         </div>
       </div>
     </section>
-  \;
+  `;
 }
