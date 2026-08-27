@@ -72,8 +72,11 @@ $UserPath = [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTa
 if ($UserPath -notlike "*$InstallDir*") {
     Write-Host "[+] Adding $InstallDir to your User PATH..." -ForegroundColor Yellow
     [Environment]::SetEnvironmentVariable("Path", "$InstallDir;$UserPath", [EnvironmentVariableTarget]::User)
+}
+
+if ($env:PATH -notlike "*$InstallDir*") {
     $env:PATH = "$InstallDir;$env:PATH"
-    Write-Host "[+] PATH updated. Please restart your terminal if needed." -ForegroundColor Green
+    Write-Host "[+] PATH updated. Please restart your terminal if 'mcp-caller' is still not found." -ForegroundColor Green
 }
 
 Write-Host "Run 'mcp-caller' to get started!" -ForegroundColor Cyan
